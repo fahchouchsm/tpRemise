@@ -1,0 +1,12 @@
+INSERT INTO REMISE (montant_min, montant_max, taux)
+SELECT 0, 999.99, 0.00
+WHERE NOT EXISTS (SELECT 1 FROM REMISE);
+
+INSERT INTO REMISE (montant_min, montant_max, taux)
+SELECT 1000, 4999.99, 0.02
+WHERE (SELECT COUNT(*) FROM REMISE) = 1;
+
+INSERT INTO REMISE (montant_min, montant_max, taux)
+SELECT 5000, 999999, 0.05
+WHERE (SELECT COUNT(*) FROM REMISE) = 2;
+
