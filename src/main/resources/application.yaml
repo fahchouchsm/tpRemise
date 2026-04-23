@@ -1,6 +1,10 @@
+server:
+  port: 8090
+
 spring:
   application:
     name: tpRemise
+
 
   datasource:
     url: jdbc:h2:mem:testdb

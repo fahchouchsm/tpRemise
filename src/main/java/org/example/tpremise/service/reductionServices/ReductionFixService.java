@@ -1,4 +1,4 @@
-package org.example.tpremise.service;
+package org.example.tpremise.service.reductionServices;
 
 import org.example.tpremise.exception.RemiseException;
 import org.springframework.stereotype.Service;

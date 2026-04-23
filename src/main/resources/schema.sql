@@ -13,4 +13,3 @@ CREATE TABLE IF NOT EXISTS "TRANSACTION" (
     remise_id BIGINT,
     CONSTRAINT fk_transaction_remise FOREIGN KEY (remise_id) REFERENCES REMISE(id)
 );
-

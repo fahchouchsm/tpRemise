@@ -1,6 +1,6 @@
-package org.example.tpremise;
+package org.example.tpremise.service;
 
-import org.example.tpremise.service.ReductionService;
+import org.example.tpremise.service.reductionServices.ReductionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
