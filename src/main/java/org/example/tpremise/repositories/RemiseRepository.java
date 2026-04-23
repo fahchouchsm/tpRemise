@@ -2,7 +2,6 @@ package org.example.tpremise.repositories;
 
 import org.example.tpremise.mappers.RemiseMapper;
 import org.example.tpremise.models.Remise;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

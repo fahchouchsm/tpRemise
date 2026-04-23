@@ -9,30 +9,21 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
-@Table(name = "TRANSACTION")
 public class Transaction {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "date", nullable = false)
     private LocalDateTime date;
 
-    @Column(name = "montant_avant", nullable = false)
     private double montantAvant;
 
-    @Column(name = "montant_apres", nullable = false)
     private double montantApres;
 
-    @ManyToOne
-    @JoinColumn(name = "remise_id")
     private Remise remise;
 
     public Transaction() {}
 
     public Transaction(double montantAvant, double montantApres, Remise remise) {
-        this.setDate(java.time.LocalDateTime.now());
+        this.setDate(LocalDateTime.now());
         this.setMontantAvant(montantAvant);
         this.setMontantApres(montantApres);
         this.setRemise(remise);
